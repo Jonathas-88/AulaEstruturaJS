@@ -74,31 +74,71 @@
 
 //Utilize uma estrutura de condição para receber um número de 1 a 7 e exibir o dia da semana correspondente (1 para Domingo, 2 para Segunda, etc.). Inclua um caso default para números inválidos.
 
-let dia = Number(prompt('digite de número de 1 a 7'));
+// let dia = Number(prompt('digite de número de 1 a 7'));
     
-switch (dia){
-    case 1:
-        alert('domingo')
-        break
-    case 2:
-        alert('segunda')
-        break
-    case 3:
-        alert('terça')
-    break
-    case 4:
-        alert('quarta')
-    break    
-    case 5:
-        alert('quinta')
-    break
-    case 6:
-        alert('sexta')
-    break
-    case 7:
-        alert('sábado')
-    break
-    default:
-        alert('número invalido ! ')
-}
+// switch (dia){
+//     case 1:
+//         alert('domingo')
+//         break
+//     case 2:
+//         alert('segunda')
+//         break
+//     case 3:
+//         alert('terça')
+//     break
+//     case 4:
+//         alert('quarta')
+//     break    
+//     case 5:
+//         alert('quinta')
+//     break
+//     case 6:
+//         alert('sexta')
+//     break
+//     case 7:
+//         alert('sábado')
+//     break
+//     default:
+//         alert('número invalido ! ')
+// }
 
+
+// Um jogo classifica os jogadores com base em um número de 1 a 4. Faça uma construção de condição que exiba a classificação:
+
+// - 1: "Iniciante"
+// - 2: "Intermediário"
+// - 3: "Avançado"
+// - 4: "Mestre"
+// - Qualquer outro número: "Nível inválido"
+
+
+let nivel = Number(prompt('Digite um número de 1 a 4'))
+
+if ( nivel === 1){
+    alert('iniciante')
+}else if (nivel === 2){
+    alert('intermediário')
+}else if (nivel === 3){
+    alert('Avançado')
+}else if (nivel === 4){
+    alert('Mestre')
+}else {
+    alert('nivel invalido')
+}
+    
+
+// Crie um programa que receba o nome de uma bebida ("suco", "refrigerante", "água", "café") e exiba uma mensagem diferente para cada uma. Se a bebida não estiver no cardápio, mostre "Opção indisponível".
+
+let bebida = prompt('escolha sua bebida: opções (suco, refrigerante, água ou café)')
+
+switch(bebida){
+    case 'suco':
+        alert('parabéns você escolheu um suco')
+    case 'refrigerante':
+        alert('parabéns você escolheu um refrigerante')
+    case 'água':
+        alert('parabéns você escolheu um água')
+    case 'café':
+        alert('parabéns você escolheu um café')
+        
+}
